@@ -117,3 +117,105 @@ header {
   border: none;
   cursor: pointer;
 }
+
+/* Trending Now  */
+main {
+  overflow: hidden;
+  width: 100%;
+}
+main h2 {
+  margin-bottom: 16px;
+  padding: 0px 80px;
+}
+.trending {
+  padding: 0px;
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scroll-padding: 0px 80px;
+  margin-bottom: 50px;
+}
+.trending::before,
+.trending::after {
+  content: "";
+  flex: 0 0 80px;
+}
+.trending::-webkit-scrollbar {
+  display: none;
+}
+span {
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+
+  position: absolute;
+  left: -25px;
+  bottom: 0;
+  z-index: 1;
+}
+.card {
+  min-width: 180px;
+  height: 250px;
+
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  padding: 6px 22px;
+  border-radius: 8px;
+  position: relative;
+  margin-left: 20px;
+}
+#show1 {
+  background: url(./resources/trending1.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show2 {
+  background: url(./resources/trending2.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show3 {
+  background: url(./resources/trending3.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show4 {
+  background: url(./resources/trending4.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show5 {
+  background: url(./resources/trending5.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show6 {
+  background: url(./resources/trending6.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show7 {
+  background: url(./resources/trending7.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show8 {
+  background: url(./resources/trending8.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show9 {
+  background: url(./resources/trending9.webp);
+  background-size: cover;
+  border-radius: 8px;
+}
+#show10 {
+  background: url(./resources/trending10.webp);
+  background-size: cover;
+  border-radius: 8px;
+}

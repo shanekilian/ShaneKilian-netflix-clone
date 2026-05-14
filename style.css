@@ -135,7 +135,7 @@ main h2 {
   scroll-behavior: smooth;
   white-space: nowrap;
   scroll-padding: 0px 80px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 .trending::before,
 .trending::after {
@@ -218,4 +218,34 @@ span {
   background: url(./resources/trending10.webp);
   background-size: cover;
   border-radius: 8px;
+}
+
+.reasons-to-join {
+  padding: 0pc 80px;
+  display: flex;
+  flex-direction: row;
+}
+.reasons-card {
+  width: 340px;
+  height: 270px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 8px;
+  padding: 24px;
+  margin-right: 12px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.join-icon {
+  height: 72px;
+  width: 72px;
+
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.reasons-card p {
+  margin-top: 12px;
 }

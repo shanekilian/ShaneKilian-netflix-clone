@@ -249,3 +249,45 @@ span {
 .reasons-card p {
   margin-top: 12px;
 }
+
+/* FAQ Section */
+
+.faq {
+  padding: 0px 80px;
+}
+details {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  margin-bottom: 9px;
+}
+summary {
+  padding: 24px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary:hover {
+  background-color: rgb(65, 65, 65);
+}
+.faq p {
+  padding: 24px;
+  margin: 0;
+  border-top: 1px solid black;
+  font-size: 24px;
+  background-color: rgb(45, 45, 45);
+}
+summary::after {
+  content: "+";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1;
+}
+details[open] summary::after {
+  content: "×";
+}

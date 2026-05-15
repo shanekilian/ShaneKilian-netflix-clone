@@ -291,3 +291,33 @@ summary::after {
 details[open] summary::after {
   content: "×";
 }
+
+/* Bottom Get Started  */
+#bottom-email-text {
+  width: 455px;
+  height: 3.5rem;
+  background-color: rgba(22, 22, 22, 0.7);
+  border: 0.0625rem solid rgba(128, 128, 128, 0.7);
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1.5rem;
+}
+.bottom-get-started {
+  margin-top: 75px;
+}
+.bottom-get-started h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bottom-input-get-started {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 16px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 86px;
+}

@@ -12,6 +12,8 @@ body {
   background-color: black;
 }
 
+/* header */
+
 header {
   position: relative;
   min-height: 100vh;
@@ -32,12 +34,14 @@ header {
   width: 100%;
 }
 
-/* Nav Bar */
+/* Nav Bar Section */
+
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 150px 0 130px;
+
+  padding: 0 80px;
   height: 80px;
   width: 100%;
 }
@@ -64,7 +68,7 @@ header {
   background-color: rgb(193, 17, 25);
 }
 
-/* Banner Content */
+/* Banner Section */
 .banner {
   display: flex;
   flex-direction: column;
@@ -88,7 +92,8 @@ header {
 
 .banner-top h1 {
   display: block;
-  width: 508px;
+  width: 100%;
+  max-width: 508px;
   font-size: 46px;
   font-weight: 800;
   line-height: 50px;
@@ -109,7 +114,7 @@ header {
   line-height: 24px;
 }
 
-/* Form Section */
+/* Email form input */
 .input-get-started {
   display: flex;
   align-items: center;
@@ -120,7 +125,8 @@ header {
 }
 
 #email-text {
-  width: 319px;
+  width: 100%;
+  max-width: 319px;
   height: 3.5rem;
   background-color: rgba(22, 22, 22, 0.7);
   border: 0.0625rem solid rgba(128, 128, 128, 0.7);
@@ -153,41 +159,42 @@ header {
 .get-started-btn:hover {
   background-color: rgb(193, 17, 25);
 }
-
-/* Trending Now  */
+/* Main Section */
 main {
   overflow: hidden;
   width: 100%;
+  padding-top: 32px;
 }
 .content-wrapper {
   padding: 0 160px;
 }
+
 main h2 {
   margin-bottom: 16px;
   font-size: 24px;
   font-weight: 700;
 }
+
+/* Trending Section */
 .trending {
   padding-left: 28px;
   padding-top: 10px;
   display: flex;
   gap: 40px;
   overflow-x: auto;
-
   overflow-y: hidden;
   touch-action: pan-x;
-
   scroll-behavior: smooth;
   white-space: nowrap;
   margin-bottom: 55px;
   border-radius: 8px;
-
   height: 265px;
 }
 
 .trending::-webkit-scrollbar {
   display: none;
 }
+
 span {
   color: black;
   -webkit-text-stroke: 1px white;
@@ -200,6 +207,7 @@ span {
   bottom: 0;
   z-index: 1;
 }
+
 .card {
   min-width: 180px;
   height: 250px;
@@ -223,57 +231,49 @@ span {
   transform: scale(1.05);
   z-index: 5;
 }
+
 #show1 {
-  background: url(./resources/trending1.webp);
-  background-size: cover;
+  background: url(./resources/trending1.webp) center/cover;
   border-radius: 8px;
 }
 #show2 {
-  background: url(./resources/trending2.webp);
-  background-size: cover;
+  background: url(./resources/trending2.webp) center/cover;
   border-radius: 8px;
 }
 #show3 {
-  background: url(./resources/trending3.webp);
-  background-size: cover;
+  background: url(./resources/trending3.webp) center/cover;
   border-radius: 8px;
 }
 #show4 {
-  background: url(./resources/trending4.webp);
-  background-size: cover;
+  background: url(./resources/trending4.webp) center/cover;
   border-radius: 8px;
 }
 #show5 {
-  background: url(./resources/trending5.webp);
-  background-size: cover;
+  background: url(./resources/trending5.webp) center/cover;
   border-radius: 8px;
 }
 #show6 {
-  background: url(./resources/trending6.webp);
-  background-size: cover;
+  background: url(./resources/trending6.webp) center/cover;
   border-radius: 8px;
 }
 #show7 {
-  background: url(./resources/trending7.webp);
-  background-size: cover;
+  background: url(./resources/trending7.webp) center/cover;
   border-radius: 8px;
 }
 #show8 {
-  background: url(./resources/trending8.webp);
-  background-size: cover;
+  background: url(./resources/trending8.webp) center/cover;
   border-radius: 8px;
 }
 #show9 {
-  background: url(./resources/trending9.webp);
-  background-size: cover;
+  background: url(./resources/trending9.webp) center/cover;
   border-radius: 8px;
 }
 #show10 {
-  background: url(./resources/trending10.webp);
-  background-size: cover;
+  background: url(./resources/trending10.webp) center/cover;
   border-radius: 8px;
 }
 
+/* Reasons card section */
 .reasons-to-join {
   padding: 0px;
   display: flex;
@@ -282,21 +282,21 @@ span {
   gap: 12px;
   margin-bottom: 62px;
 }
+
 .reasons-card {
   width: 230px;
   height: 330px;
   background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
   border-radius: 16px;
   padding: 24px;
-
   position: relative;
   display: flex;
   flex-direction: column;
 }
+
 .join-icon {
   height: 72px;
   width: 72px;
-
   position: absolute;
   bottom: 16px;
   right: 16px;
@@ -308,15 +308,16 @@ span {
 }
 
 /* FAQ Section */
-
 .faq {
   padding: 0px;
 }
+
 details {
   background-color: rgb(45, 45, 45);
   color: white;
   margin-bottom: 9px;
 }
+
 summary {
   padding: 24px;
   font-size: 24px;
@@ -326,12 +327,15 @@ summary {
   cursor: pointer;
   list-style: none;
 }
+
 summary::-webkit-details-marker {
   display: none;
 }
+
 summary:hover {
   background-color: rgb(65, 65, 65);
 }
+
 .faq p {
   padding: 24px;
   margin: 0;
@@ -339,6 +343,7 @@ summary:hover {
   font-size: 24px;
   background-color: rgb(45, 45, 45);
 }
+
 summary::after {
   content: "+";
   font-size: 36px;
@@ -348,10 +353,10 @@ summary::after {
 details[open] summary::after {
   content: "×";
 }
-
-/* Bottom Get Started  */
+/* Bottom email section */
 #bottom-email-text {
-  width: 455px;
+  width: 100%;
+  max-width: 455px;
   height: 3.5rem;
   background-color: rgba(22, 22, 22, 0.7);
   border: 0.0625rem solid rgba(128, 128, 128, 0.7);
@@ -363,6 +368,7 @@ details[open] summary::after {
 #bottom-email-text::placeholder {
   color: #b9b8b9;
 }
+
 .bottom-get-started {
   margin-top: 75px;
   margin-bottom: 64px;
@@ -382,50 +388,54 @@ details[open] summary::after {
   justify-content: center;
   margin-bottom: 86px;
 }
-
-/* FOOTER SECTION */
+/* Footer Section */
 footer {
   padding: 0px 0px 96px 0px;
 }
+
 footer p {
   padding: 3px 3px;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
+
 footer p a {
-  color: rgba(255, 255, 255, 0.7); /* Matches your footer p text color */
-  text-decoration: underline; /* Keeps or removes the underline depending on preference */
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
 }
+
 footer .disclaimer {
   font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 36px;
 }
+
 footer .region {
   font-size: 14px;
   font-weight: 400;
   margin-top: 36px;
   color: rgba(255, 255, 255, 0.7);
 }
-footer p .region {
-  margin-top: 36px;
-}
+
 footer ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
 footer li {
   margin: 12px 0 0 12px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   text-decoration: underline;
 }
+
 .footer-section {
   margin-top: 36px;
 }
+
 .lang-container {
   position: relative;
   display: inline-block;
@@ -433,6 +443,7 @@ footer li {
   margin-top: 50px;
   padding: 3px;
 }
+
 .btn-dropdown {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
@@ -447,6 +458,7 @@ footer li {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
 .icon-left {
   position: absolute;
   left: 12px;
@@ -456,6 +468,7 @@ footer li {
   height: 16px;
   pointer-events: none;
 }
+
 .icon-right {
   position: absolute;
   right: 12px;
@@ -465,11 +478,13 @@ footer li {
   height: 12px;
   pointer-events: none;
 }
+
 .btn-dropdown option {
   background-color: #141414;
   color: #ffffff;
 }
-/* CURVE SECTION */
+
+/* Curve div */
 .curve-container {
   width: 100%;
   height: 160px;
@@ -487,9 +502,13 @@ footer li {
   height: 100%;
   display: block;
 }
-/* Responsive design */
 
+/* Tablet (max 1024px) */
 @media (max-width: 1024px) {
+  .nav-bar {
+    padding: 0 40px;
+  }
+
   .content-wrapper {
     padding: 0 60px;
   }
@@ -499,18 +518,29 @@ footer li {
     padding: 32px;
   }
 
+  .banner-top h1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .reasons-to-join {
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .reasons-card {
-    width: 45%;
+    width: calc(50% - 12px);
+    height: auto;
+    min-height: 220px;
+  }
+
+  #bottom-email-text {
+    width: 100%;
+    max-width: 380px;
   }
 }
 
-/* tablet and mobile */
-
+/* Mobile (max 768px) */
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -520,9 +550,10 @@ footer li {
     padding: 0 20px;
   }
 
+  /* --- Nav --- */
   .nav-bar {
-    padding: 0 20px;
-    height: 70px;
+    padding: 0 16px;
+    height: 64px;
   }
 
   #netflix-logo {
@@ -531,21 +562,26 @@ footer li {
     margin-left: 0;
   }
 
+  /* --- Hero banner --- */
   .banner {
     width: 100%;
     min-height: auto;
-    padding: 20px;
+    padding: 24px 16px 40px;
     text-align: center;
+    margin-top: -16px;
   }
 
   .banner-top h1 {
     width: 100%;
-    font-size: 32px;
-    line-height: 40px;
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 12px;
   }
 
   .banner-top p {
     font-size: 16px;
+    margin-bottom: 16px;
   }
 
   .banner h3 {
@@ -556,71 +592,126 @@ footer li {
   .input-get-started,
   .bottom-input-get-started {
     flex-direction: column;
+    align-items: stretch;
     width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
   }
 
   #email-text,
-  #bottom-email-text,
-  .get-started-btn {
+  #bottom-email-text {
     width: 100%;
     max-width: 100%;
   }
 
   .get-started-btn {
+    width: 100%;
     font-size: 18px;
   }
 
   .trending {
     gap: 16px;
-    padding-left: 10px;
+    padding-left: 8px;
+    height: 200px;
   }
 
   .card {
-    min-width: 140px;
-    height: 210px;
+    min-width: 115px;
+    height: 180px;
   }
 
   span {
-    font-size: 60px;
-    left: -15px;
+    font-size: 52px;
+    left: -12px;
   }
 
+  /* Reasons cards: switch to horizontal */
   .reasons-to-join {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 10px;
   }
 
   .reasons-card {
     width: 100%;
     height: auto;
-    min-height: 220px;
+    min-height: unset;
+
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 16px;
+    padding-right: 100px;
   }
 
+  .join-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: unset;
+    width: 60px;
+    height: 60px;
+  }
+
+  /* --- FAQ --- */
   summary {
     font-size: 18px;
-    padding: 18px;
+    padding: 18px 16px;
   }
 
   .faq p {
-    font-size: 18px;
-    padding: 18px;
+    font-size: 16px;
+    padding: 18px 16px;
+  }
+
+  /* --- Bottom CTA --- */
+  .bottom-get-started {
+    margin-top: 48px;
+    margin-bottom: 40px;
+  }
+
+  .bottom-get-started h3 {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  .bottom-input-get-started {
+    margin-bottom: 48px;
   }
 
   footer ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   footer li {
-    margin-left: 0;
+    margin: 8px 0 0 0;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .lang-container {
+    margin-top: 32px;
   }
 }
 
-/* Small phones */
-
+/* Small Phones (max 480px) */
 @media (max-width: 480px) {
+  .nav-bar {
+    padding: 0 12px;
+    height: 56px;
+  }
+
+  #netflix-logo {
+    width: 88px;
+  }
+
   .banner-top h1 {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .banner-top p {
@@ -631,21 +722,42 @@ footer li {
     font-size: 13px;
   }
 
+  .trending {
+    height: 170px;
+    padding-left: 4px;
+  }
+
   .card {
-    min-width: 120px;
-    height: 180px;
+    min-width: 100px;
+    height: 155px;
   }
 
   span {
-    font-size: 50px;
+    font-size: 42px;
+    left: -10px;
   }
 
-  footer ul {
-    grid-template-columns: 1fr;
+  summary {
+    font-size: 16px;
+    padding: 16px 14px;
+  }
+
+  .faq p {
+    font-size: 15px;
+    padding: 16px 14px;
+  }
+
+  footer li {
+    font-size: 13px;
   }
 
   .get-started-btn {
     padding: 12px;
     font-size: 16px;
+  }
+
+  .curve-container {
+    height: 80px;
+    margin-top: -80px;
   }
 }

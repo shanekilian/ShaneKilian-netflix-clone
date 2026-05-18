@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="redFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#e50914" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#e50914" stop-opacity="0.5"/>
+      <stop offset="50%"  stop-color="#e50914" stop-opacity="1"/>
+      <stop offset="80%"  stop-color="#e50914" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#e50914" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#3318dd" stop-opacity="0.9"/>
+      <stop offset="40%"  stop-color="#1a0a99" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark fill ONLY below the curve -->
+  <path d="M0,220 Q720,100 1440,220 Z" fill="black"/>
+
+  <!-- Blue glow — tight band just below the red line -->
+  <path d="M0,220 Q720,100 1440,220 Z" fill="url(#blueGlow)"/>
+
+  <!-- Red gradient curve line -->
+  <path d="M0,220 Q720,100 1440,220" fill="none" stroke="url(#redFade)" stroke-width="6"/>
+</svg>

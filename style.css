@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap");
 
+/* Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
@@ -34,7 +36,7 @@ header {
   width: 100%;
 }
 
-/* Nav Bar Section */
+/* Nav Bar */
 
 .nav-bar {
   display: flex;
@@ -68,7 +70,7 @@ header {
   background-color: rgb(193, 17, 25);
 }
 
-/* Banner Section */
+/* Banner */
 .banner {
   display: flex;
   flex-direction: column;
@@ -114,7 +116,7 @@ header {
   line-height: 24px;
 }
 
-/* Email form input */
+/* Email Input */
 .input-get-started {
   display: flex;
   align-items: center;
@@ -159,7 +161,7 @@ header {
 .get-started-btn:hover {
   background-color: rgb(193, 17, 25);
 }
-/* Main Section */
+/* Main */
 main {
   overflow: hidden;
   width: 100%;
@@ -234,48 +236,38 @@ span {
 
 #show1 {
   background: url(./resources/trending1.webp) center/cover;
-  border-radius: 8px;
 }
 #show2 {
   background: url(./resources/trending2.webp) center/cover;
-  border-radius: 8px;
 }
 #show3 {
   background: url(./resources/trending3.webp) center/cover;
-  border-radius: 8px;
 }
 #show4 {
   background: url(./resources/trending4.webp) center/cover;
-  border-radius: 8px;
 }
 #show5 {
   background: url(./resources/trending5.webp) center/cover;
-  border-radius: 8px;
 }
 #show6 {
   background: url(./resources/trending6.webp) center/cover;
-  border-radius: 8px;
 }
 #show7 {
   background: url(./resources/trending7.webp) center/cover;
-  border-radius: 8px;
 }
 #show8 {
   background: url(./resources/trending8.webp) center/cover;
-  border-radius: 8px;
 }
 #show9 {
   background: url(./resources/trending9.webp) center/cover;
-  border-radius: 8px;
 }
 #show10 {
   background: url(./resources/trending10.webp) center/cover;
-  border-radius: 8px;
 }
 
 /* Reasons card section */
 .reasons-to-join {
-  padding: 0px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -309,7 +301,7 @@ span {
 
 /* FAQ Section */
 .faq {
-  padding: 0px;
+  padding: 0;
 }
 
 details {
@@ -503,6 +495,12 @@ footer li {
   display: block;
 }
 
+footer li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
 /* Tablet (max 1024px) */
 @media (max-width: 1024px) {
   .nav-bar {
@@ -687,6 +685,10 @@ footer li {
 
   footer li {
     margin: 8px 0 0 0;
+  }
+  footer ul a {
+    color: inherit;
+    text-decoration: none;
   }
 
   footer p {

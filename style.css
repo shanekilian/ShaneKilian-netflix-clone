@@ -57,33 +57,50 @@ header {
   border-radius: 4px;
   width: 76px;
   height: 32px;
-  cursor: pointer;
   padding: 4px 16px;
+  cursor: pointer;
+}
+.s-btn:hover {
+  background-color: rgb(193, 17, 25);
 }
 
 /* Banner Content */
 .banner {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 32px 32px;
-  max-width: 800px;
-  margin: 0 auto;
+
+  margin-top: -32px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1240px;
+  max-width: 1920px;
+  min-height: 592px;
+
+  padding-top: 0px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .banner-top h1 {
-  font-size: 40px;
-  font-weight: 700;
+  display: block;
+  width: 508px;
+  font-size: 46px;
+  font-weight: 800;
   line-height: 50px;
+  text-align: center;
   margin-bottom: 8px;
 }
 
 .banner-top p {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .banner h3 {
@@ -109,23 +126,32 @@ header {
   border: 0.0625rem solid rgba(128, 128, 128, 0.7);
   border-radius: 0.25rem;
   color: white;
-  padding: 0.75rem 1rem;
-  font-size: 1.5rem;
+
+  font-size: 16px;
+  line-height: 24px;
+  padding: 24px 16px;
+}
+#email-text::placeholder {
+  color: #b9b8b9;
 }
 
 .get-started-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   background: rgb(229, 9, 20);
   color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 23px;
+  font-weight: 700;
   height: 3.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
   border: none;
   cursor: pointer;
+}
+.get-started-btn:hover {
+  background-color: rgb(193, 17, 25);
 }
 
 /* Trending Now  */

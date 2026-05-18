@@ -159,12 +159,14 @@ main {
   overflow: hidden;
   width: 100%;
 }
+.content-wrapper {
+  padding: 0 80px;
+}
 main h2 {
   margin-bottom: 16px;
-  padding: 0px 80px;
 }
 .trending {
-  padding: 0px;
+  padding-left: 21px;
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -174,14 +176,9 @@ main h2 {
 
   scroll-behavior: smooth;
   white-space: nowrap;
-  scroll-padding: 0px 80px;
   margin-bottom: 55px;
 }
-.trending::before,
-.trending::after {
-  content: "";
-  flex: 0 0 80px;
-}
+
 .trending::-webkit-scrollbar {
   display: none;
 }
@@ -207,7 +204,11 @@ span {
   padding: 6px 22px;
   border-radius: 8px;
   position: relative;
-  margin-left: 20px;
+
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
 }
 #show1 {
   background: url(./resources/trending1.webp);
@@ -261,9 +262,10 @@ span {
 }
 
 .reasons-to-join {
-  padding: 0pc 80px;
+  padding: 0px;
   display: flex;
   flex-direction: row;
+  gap: 12px;
 }
 .reasons-card {
   width: 340px;
@@ -271,7 +273,6 @@ span {
   background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
   border-radius: 8px;
   padding: 24px;
-  margin-right: 12px;
 
   position: relative;
   display: flex;
@@ -293,7 +294,7 @@ span {
 /* FAQ Section */
 
 .faq {
-  padding: 0px 80px;
+  padding: 0px;
 }
 details {
   background-color: rgb(45, 45, 45);
@@ -364,7 +365,7 @@ details[open] summary::after {
 
 /* FOOTER SECTION */
 footer {
-  padding: 0px 80px;
+  padding: 0px;
 }
 footer p {
   padding: 3px 3px;

@@ -65,6 +65,7 @@ header {
   height: 32px;
   padding: 4px 16px;
   cursor: pointer;
+  white-space: nowrap;
 }
 .s-btn:hover {
   background-color: rgb(193, 17, 25);
@@ -272,7 +273,6 @@ span {
 
 .trailer-video {
   width: 100%;
-  max-width: 800px;
   height: 450px;
   border-radius: 8px;
   display: block;
@@ -583,6 +583,8 @@ footer li a {
     padding: 24px 16px 40px;
     text-align: center;
     margin-top: -16px;
+    justify-content: center;
+    flex: 1;
   }
 
   .banner-top h1 {

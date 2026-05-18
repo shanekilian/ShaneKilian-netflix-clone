@@ -166,8 +166,12 @@ main h2 {
 .trending {
   padding: 0px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   overflow-x: auto;
+
+  overflow-y: hidden;
+  touch-action: pan-x;
+
   scroll-behavior: smooth;
   white-space: nowrap;
   scroll-padding: 0px 80px;

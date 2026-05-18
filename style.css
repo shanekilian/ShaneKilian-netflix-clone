@@ -265,6 +265,19 @@ span {
   background: url(./resources/trending10.webp) center/cover;
 }
 
+/* Trailer */
+.trailer {
+  margin-bottom: 62px;
+}
+
+.trailer-video {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 8px;
+  display: block;
+}
+
 /* Reasons card section */
 .reasons-to-join {
   padding: 0;
@@ -536,6 +549,9 @@ footer li a {
     width: 100%;
     max-width: 380px;
   }
+  .trailer-video {
+    height: 380px;
+  }
 }
 
 /* Mobile (max 768px) */
@@ -698,6 +714,9 @@ footer li a {
   .lang-container {
     margin-top: 32px;
   }
+  .trailer-video {
+    height: 220px;
+  }
 }
 
 /* Small Phones (max 480px) */
@@ -761,5 +780,8 @@ footer li a {
   .curve-container {
     height: 80px;
     margin-top: -80px;
+  }
+  .trailer-video {
+    height: 180px;
   }
 }
